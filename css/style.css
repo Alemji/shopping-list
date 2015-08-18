@@ -9,20 +9,31 @@ nav {
 	height: 10em;
 }
 
-form {
-	text-align: center;
+ .main  {
+ 	text-align: center;
 	word-spacing: 2em;
 	padding-top: 4.5em;
 	font-family: comic sans ms;
 }
 
-.listitem {
+}
+
+
+nav > p {
 	font-style: italic;
+	color: gray;
+	position: relative;
+	left: 9em;
+	top:-1em;
+
+}
+
+.listitem {
 	color:#000000 ;
 	background-color: #1fbcb5;
 	border: none;
-	text-align: center;
 	border-radius: 1em;
+	text-align: center;
 }
 
 .add {
@@ -62,6 +73,8 @@ ul {
 	padding-bottom: 5%;
 	list-style-type:square;
 	margin: 1em;
+	list-style-type: none;
+	
 
 
 }
@@ -71,3 +84,23 @@ ul {
 	text-decoration: line-through;
 
 }
+
+@media (max-width:500px) {
+	
+	nav {
+		height: 30%;
+
+	}
+	.main {
+		word-spacing: .25em;
+
+	}
+
+	.listitem {
+		width: 35%;
+	}
+
+	}
+
+
+  }
