@@ -1,11 +1,20 @@
 $(document).ready(function(){
 
 	$('.add').click(function(){
-		$('.unchecked').append("<li><input type=checkbox>" +
-		$("input[type='text']").val() + "</li>");
-		//appends text input to the list
 
+		if ($('.listitem').val()) {
+			$('.unchecked').append("<li><input type=checkbox>" +
+			$("input[type='text']").val() + "</li>");
+			$('.listitem').val('');
+		}
+		//appends text input to the list
+		//clears the input box
+		else {
+			alert('add list item to box')
+		}
 	})
+
+
 
 	$('ul').on('click', 'input', function(event){ 
 		if ($(this).prop('checked')) {
